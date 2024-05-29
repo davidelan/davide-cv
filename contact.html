@@ -14,29 +14,15 @@
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
 
+
     <script type="text/javascript">
-        (function(){
-        emailjs.init({
-        publicKey: "lk6mB4oFY1orGYoee",
-        });
+        (function() {
+            emailjs.init({publicKey: 'YOUR_PUBLIC_KEY'});
+            emailjs.send("outlook", "davide", {
+                name: "JACK",
+                notes: "The project that I want is..."
+            })
         })();
-    </script>
-
-
-    <script type="text/javascript">
-        var templateParams = {
-        name: 'Davide',
-        notes: 'The project that I want is ...',
-        };
-
-        emailjs.send('outlook', 'davide', templateParams).then(
-        (response) => {
-            console.log('SUCCESS!', response.status, response.text);
-        },
-        (error) => {
-            console.log('FAILED...', error);
-        },
-        );
     </script>
 
 </head>

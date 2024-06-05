@@ -119,7 +119,7 @@ header {
 
 .logo {
     background: url("../images/davide.jpg");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 360px;
